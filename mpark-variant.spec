@@ -1,12 +1,11 @@
 Name: mpark-variant
 Summary: C++17 std::variant for C++11/14/17
 Version: 1.3.0
-Release: 0.1%{?dist}
+Release: 1%{?dist}
 
 License: Boost
 URL: https://github.com/mpark/variant
 Source0: %{url}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildArch: noarch
 
 BuildRequires: ninja-build
 BuildRequires: gcc-c++
@@ -46,5 +45,5 @@ popd
 %{_libdir}/cmake/mpark_variant
 
 %changelog
-* Wed Jul 04 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 1.3.0-0.1
+* Wed Jul 04 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 1.3.0-1
 - Initial SPEC release.
