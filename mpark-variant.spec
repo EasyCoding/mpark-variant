@@ -1,3 +1,7 @@
+# This is a header-only library, but it install also cmake
+# scripts to %%{_libdir}, so it cannot be noarch.
+%global debug_package %{nil}
+
 Name: mpark-variant
 Summary: C++17 std::variant for C++11/14/17
 Version: 1.3.0
